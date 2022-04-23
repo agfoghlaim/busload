@@ -1,0 +1,40 @@
+.tripTable tr {
+	position: relative;
+	td {
+		white-space: nowrap;
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+
+	td:not(.pseudoRow) {
+		padding-top: 0.4rem;
+		padding-bottom: 1.6rem;
+		background: var(--gray);
+	}
+	// .psuedoRow because of key={} vs violation DOM problem
+	.pseudoRow {
+		display: block;
+		font-size: 0.8rem;
+		background: var(--white);
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+	}
+}
+
+.selectedStop {
+	background: var(--black);
+	color: var(--white);
+}
+
+.iconWrap {
+	display: grid;
+	display: grid;
+	grid-template-columns: 1rem 1fr;
+	align-items: center;
+	column-gap: 0.75rem;
+	svg {
+		max-height: 0.75rem;
+	}
+}

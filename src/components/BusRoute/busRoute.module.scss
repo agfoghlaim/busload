@@ -1,0 +1,20 @@
+.busRoute {
+	position: relative;
+	overflow-y: auto;
+	overflow-x: hidden;
+	display: grid;
+	height: calc(100vh - 9rem);
+	max-height: 100%;
+	align-content: flex-start;
+	h3 {
+		background: var(--black);
+		color: var(--white);
+		line-height: 2rem;
+		white-space: nowrap;
+		span {
+			background: var(--green);
+			padding: 0.25rem 0.5rem;
+			color: var(--black);
+		}
+	}
+}

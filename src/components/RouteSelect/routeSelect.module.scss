@@ -1,0 +1,38 @@
+.routeSelect {
+	overflow: hidden;
+	display: grid;
+	align-items: center;
+	align-content: center;
+	justify-content: flex-start;
+	grid-auto-flow: column;
+	height: 2rem;
+}
+.stopDets {
+	padding: 0.5rem 0.25rem;
+	margin: 1rem 0;
+	height: 1.5rem;
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+}
+.selectedRoute,
+.altRoutes {
+	display: inline-block;
+	margin-right: 1rem;
+	padding: 0.125rem 0.25rem;
+	border-bottom: 0.2rem solid;
+	border-color: transparent;
+}
+.selectedRoute:hover,
+.altRoutes:hover {
+	text-decoration: none;
+	background: var(--green);
+}
+.altRoutes {
+	border-color: var(--green);
+}
+
+.selectedRoute {
+	background: var(--green);
+	font-weight: bold;
+}

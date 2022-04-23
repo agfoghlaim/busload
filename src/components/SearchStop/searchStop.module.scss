@@ -1,0 +1,14 @@
+.searchStop {
+	display: grid;
+	position: relative;
+	
+	.found {
+		display: grid;
+		max-height: 10vh;
+		overflow: auto;
+		position: absolute;
+		top: 2rem;
+		z-index: 99;
+	}
+	
+}

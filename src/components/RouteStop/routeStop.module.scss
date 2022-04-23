@@ -1,0 +1,89 @@
+.routeStop {
+	display: grid;
+	align-items: flex-start;
+	align-content: flex-start;
+	max-height: calc(100vh - 9rem);
+
+	overflow: auto;
+	position: relative;
+	.routeStopContent {
+		display: grid;
+		grid-gap: 1rem;
+		grid-template-rows: 2rem min-content 1fr;
+		width: min-content;
+		overflow: hidden;
+	}
+
+	.stopHeading {
+		display: grid;
+		grid-template-columns: 1.5rem 1fr;
+		justify-content: flex-start;
+		align-content: center;
+		align-items: center;
+		svg {
+			height: 1.5rem;
+		}
+		h4 {
+			background: var(--black);
+			color: var(--white);
+			padding: 0.25rem 0.5rem;
+			white-space: nowrap;
+		}
+	}
+	.info {
+		display: grid;
+		grid-gap: 2rem;
+
+		overflow: hidden;
+		h5 {
+			background: var(--black);
+			color: var(--white);
+
+			font-size: 0.8rem;
+			line-height: 1.9;
+			white-space: nowrap;
+
+			span {
+				background: var(--green);
+				padding: 0.25rem 0.5rem;
+				color: var(--black);
+				height: 100%;
+				line-height: 1.2;
+			}
+		}
+		.legend {
+			font-size: 12px;
+			font-weight: 600;
+			display: flex;
+			flex-wrap: wrap;
+			gap: 1em;
+			p {
+				display: grid;
+				grid-auto-flow: column;
+				line-height: 1.5;
+				align-items: center;
+				align-content: center;
+				gap: 0.5em;
+				.egEarly,
+				.egLate,
+				.egOntime {
+					border-radius: 0.1em;
+					background: var(--aqua);
+					width: 1em;
+					height: 1em;
+					display: grid;
+					place-content: center;
+					padding: 0.25em;
+				}
+				.egNoRealtime {
+					border-radius: 0.1em;
+					background: var(--gray);
+					width: 1em;
+					min-height: 1em;
+					display: inline-block;
+					padding: 0.25em;
+				}
+			}
+		}
+	}
+}

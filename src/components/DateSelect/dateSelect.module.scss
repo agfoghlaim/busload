@@ -1,0 +1,16 @@
+.tripDate {
+	margin: 1rem 0;
+	display: grid;
+	grid-auto-flow: row;
+	width: min-content;
+	row-gap: 0.5rem;
+	.buttonsWrap {
+		display: grid;
+		grid-auto-flow: column;
+		grid-gap: 1rem;
+	}
+	h6 {
+		background: var(--gray);
+		padding: 0.25rem 0.5rem;
+	}
+}

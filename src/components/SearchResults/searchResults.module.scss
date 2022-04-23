@@ -1,0 +1,33 @@
+.searchResults {
+	position: relative;
+	overflow: auto;
+	display: grid;
+	height: calc(100vh - 5rem);
+	max-height: 100%;
+	align-content: flex-start;
+	width: min-content;
+	justify-content: flex-start;
+	align-items: center;
+	.stopItems {
+		display: grid;
+		row-gap: 1rem;
+		margin: 1.5rem 0;
+		grid-auto-rows: 2rem;
+	}
+	h3 {
+		background: var(--black);
+		color: var(--white);
+		line-height: 2rem;
+		white-space: nowrap;
+		display: grid;
+		justify-content: flex-start;
+		grid-auto-flow: column;
+		align-items: center;
+		column-gap: 1rem;
+		span {
+			background: var(--green);
+			padding: 0.25rem 0.5rem;
+			color: var(--black);
+		}
+	}
+}

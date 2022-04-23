@@ -1,0 +1,40 @@
+.euroTable {
+	width: min-content;
+	th {
+		background-color: var(--gray);
+	}
+	td {
+		background: var(--gray);
+		a {
+			display: grid;
+			grid-auto-flow: column;
+			grid-template-columns: min-content min-content;
+			grid-gap: 0.25rem;
+			place-items: center;
+			white-space: nowrap;
+			span {
+				padding: 0.25rem;
+			}
+		}
+	}
+	td.rtTd {
+		padding: 0;
+		a {
+			span:nth-child(2) {
+				background: var(--aqua);
+				display: grid;
+				place-content: center;
+				pointer-events: none;
+
+				width: 1.2rem;
+			}
+		}
+	}
+	.selectedTrip {
+		span:nth-child(1) {
+			background: var(--black);
+			color: var(--white);
+			text-decoration: underline;
+		}
+	}
+}

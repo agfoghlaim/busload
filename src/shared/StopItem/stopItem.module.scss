@@ -1,0 +1,29 @@
+.stopItem,
+.selectedStop {
+	display: grid;
+	grid-template-columns: 1rem 1fr;
+	align-items: center;
+	a {
+		padding: 0.25rem 0.5rem;
+		white-space: nowrap;
+	}
+	.iconWrap {
+		background: white;
+		display: grid;
+		svg {
+			height: 80%;
+		}
+	}
+}
+.stopItem:not(.selectedStop) {
+	a {
+		background: var(--gray);
+	}
+}
+
+.selectedStop {
+	a {
+		background: var(--black);
+		color: var(--white);
+	}
+}
